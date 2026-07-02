@@ -127,14 +127,6 @@ const badges = [
     verify: "https://www.credly.com/badges/20aace96-1fd3-4f92-8829-dc312c05a34a/public_url"
   },
   {
-    title: "Lifelong Learning 2026",
-    titleEn: "Lifelong Learning 2026",
-    issuer: "Certiprof",
-    exp: "Vence 22 ene 2027",
-    expEn: "Expires Jan 22, 2027",
-    verify: null
-  },
-  {
     title: "Java Junior Developer",
     titleEn: "Java Junior Developer",
     issuer: "Certiprof",
