@@ -477,6 +477,28 @@ ul{ margin:0; padding:0; list-style:none; }
   background: var(--accent-2-soft);
   color: var(--accent-2);
 }
+.tag--client{
+  background: var(--accent);
+  color: #fff;
+}
+.tag--live{
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.project__features{
+  margin: 0 0 1.1rem;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+  max-width: 680px;
+  font-size: 0.95rem;
+}
+.project__features li{ margin-bottom: 0.3rem; list-style: disc; }
+.project__features li::marker{ color: var(--accent); }
+.project__private{
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
 .project__title{
   font-family: var(--font-display);
   font-size: 1.35rem;

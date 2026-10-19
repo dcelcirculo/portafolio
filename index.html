@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title id="page-title">Carolina Gil Rojas — Backend Developer en formación</title>
-<meta name="description" id="page-desc" content="Portafolio de Carolina Gil Rojas, estudiante de Ingeniería de Software especializada en desarrollo backend con Java, Spring Boot, Python y Flutter.">
+<meta name="description" id="page-desc" content="Portafolio de Carolina Gil Rojas, desarrolladora backend con Python (FastAPI), Java (Spring Boot), React y Docker.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -45,7 +45,7 @@
       <p class="eyebrow" data-i18n="hero.eyebrow">// hola, soy</p>
       <h1 class="hero__name">Carolina<br>Gil Rojas</h1>
       <p class="hero__role" data-i18n="hero.role">Backend Developer en formación</p>
-      <p class="hero__lede" data-i18n="hero.lede">Estudiante de Ingeniería de Software, quinto semestre. Construyo aplicaciones backend con Java y Spring Boot, y complemento mi formación con Python, Flutter e Inteligencia Artificial en DevSenior Code.</p>
+      <p class="hero__lede" data-i18n="hero.lede">Estudiante de Ingeniería de Software, quinto semestre. Construyo aplicaciones backend con Python (FastAPI) y Java (Spring Boot), con frontends en React y despliegue en Docker. Hoy desarrollo software real para clientes y para mi propio negocio.</p>
       <div class="hero__actions">
         <a href="#proyectos" class="btn btn--primary" data-i18n="hero.btnProjects">Ver proyectos</a>
         <a href="#contacto" class="btn btn--ghost" data-i18n="hero.btnContact">Contáctame</a>
@@ -91,6 +91,7 @@
           <li data-i18n="about.li4">Desarrollo móvil con Flutter</li>
         </ul>
         <p data-i18n="about.p2">Me enfoco en construir aplicaciones backend sólidas, con arquitectura en capas y buenas prácticas, y estoy ampliando ese conocimiento hacia inteligencia artificial y desarrollo móvil.</p>
+        <p data-i18n="about.p3">Antes de programar trabajé cerca de 20 años en contabilidad, administración y comercio exterior en empresas familiares en Colombia. Por eso construyo software pensando en cómo lo usa de verdad un negocio: inventarios, ventas, facturación y operación diaria.</p>
       </div>
     </div>
   </section>
@@ -104,16 +105,32 @@
       <div class="skills__group">
         <h3 class="skills__group-title" data-i18n="skills.g1">Backend</h3>
         <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">FastAPI</span>
+          <span class="chip">SQLAlchemy</span>
+          <span class="chip">Alembic</span>
+          <span class="chip">Pydantic</span>
           <span class="chip">Java</span>
           <span class="chip">Spring Boot</span>
+          <span class="chip">JPA</span>
+          <span class="chip" data-i18n="skills.jwt">Autenticación JWT</span>
+        </div>
+      </div>
+      <div class="skills__group">
+        <h3 class="skills__group-title" data-i18n="skills.g5">Bases de datos</h3>
+        <div class="chips">
           <span class="chip">PostgreSQL</span>
+          <span class="chip">SQLite</span>
           <span class="chip">SQL</span>
         </div>
       </div>
       <div class="skills__group">
-        <h3 class="skills__group-title" data-i18n="skills.g2">Otros lenguajes &amp; plataformas</h3>
+        <h3 class="skills__group-title" data-i18n="skills.g6">Frontend &amp; móvil</h3>
         <div class="chips">
-          <span class="chip">Python</span>
+          <span class="chip">React</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">Vite</span>
+          <span class="chip">Tailwind CSS</span>
           <span class="chip">Flutter</span>
           <span class="chip">Dart</span>
         </div>
@@ -121,13 +138,31 @@
       <div class="skills__group">
         <h3 class="skills__group-title" data-i18n="skills.g3">IA &amp; datos</h3>
         <div class="chips">
+          <span class="chip">OpenAI API (Vision)</span>
+          <span class="chip">OCR · Tesseract</span>
           <span class="chip" data-i18n="skills.ml">Machine Learning (fundamentos)</span>
           <span class="chip">Data Science</span>
         </div>
       </div>
       <div class="skills__group">
-        <h3 class="skills__group-title" data-i18n="skills.g4">Herramientas</h3>
+        <h3 class="skills__group-title" data-i18n="skills.g7">Integraciones</h3>
         <div class="chips">
+          <span class="chip">Gmail API · OAuth</span>
+          <span class="chip">Google Sheets API</span>
+          <span class="chip">Selenium</span>
+          <span class="chip" data-i18n="skills.pdf">Generación de PDF</span>
+          <span class="chip">Webhooks</span>
+        </div>
+      </div>
+      <div class="skills__group">
+        <h3 class="skills__group-title" data-i18n="skills.g4">DevOps &amp; herramientas</h3>
+        <div class="chips">
+          <span class="chip">Docker</span>
+          <span class="chip">Docker Compose</span>
+          <span class="chip">Caddy</span>
+          <span class="chip">Tailscale</span>
+          <span class="chip">pytest</span>
+          <span class="chip">Vitest</span>
           <span class="chip">Git</span>
           <span class="chip">GitHub</span>
         </div>
@@ -149,14 +184,118 @@
   <!-- PROYECTOS -->
   <section class="section section--alt" id="proyectos">
     <p class="eyebrow" data-i18n="projects.eyebrow">// 04 · proyectos</p>
-    <h2 class="section__title" data-i18n="projects.title">Proyectos en desarrollo</h2>
+    <h2 class="section__title" data-i18n="projects.title">Proyectos</h2>
+    <p class="section__subtitle" data-i18n="projects.subtitle">Software real para clientes y para mi negocio, más proyectos académicos. El código de los proyectos reales es privado porque maneja datos de clientes.</p>
 
     <div class="projects">
 
       <article class="project">
         <div class="project__meta">
-          <span class="tag tag--progress" data-i18n="projects.inProgress">En desarrollo</span>
+          <span class="tag tag--client" data-i18n="projects.client">Proyecto para cliente</span>
           <span class="project__index">01</span>
+        </div>
+        <h3 class="project__title" data-i18n="projects.p4.title">Sistema de Inventario y Ventas · Esmeralda Makeup</h3>
+        <p class="project__desc" data-i18n="projects.p4.desc">Producto web instalable que licencio a pequeñas empresas: cada cliente lo tiene en su propio servidor, con su dominio y su base de datos. Primer cliente: Esmeralda Makeup, que compra en Estados Unidos y vende en Guatemala.</p>
+        <ul class="project__features">
+          <li data-i18n="projects.p4.f1">Un solo código para todos los clientes; monedas, impuestos, logo y numeración se configuran desde la interfaz.</li>
+          <li data-i18n="projects.p4.f2">Módulos adicionales que se activan con una licencia firmada digitalmente.</li>
+          <li data-i18n="projects.p4.f3">Ventas en USD y GTQ, costo promedio y escaneo de códigos de barras con la cámara del celular.</li>
+          <li data-i18n="projects.p4.f4">Pantallas de vendedoras pensadas primero para celular; despliegue con HTTPS automático.</li>
+        </ul>
+        <div class="project__stack">
+          <span class="pill">Python</span>
+          <span class="pill">FastAPI</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">SQLAlchemy</span>
+          <span class="pill">React</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">Docker</span>
+          <span class="pill">Caddy</span>
+        </div>
+        <span class="project__private" data-i18n="projects.private">🔒 Código privado</span>
+      </article>
+
+      <article class="project">
+        <div class="project__meta">
+          <span class="tag tag--live" data-i18n="projects.inUse">En uso real</span>
+          <span class="project__index">02</span>
+        </div>
+        <h3 class="project__title" data-i18n="projects.p5.title">Sistema Contable Local</h3>
+        <p class="project__desc" data-i18n="projects.p5.desc">Sistema de contabilidad y facturación para freelancers y pequeños negocios en Estados Unidos. Funciona sin internet, en la red local, y se usa desde la computadora o el celular.</p>
+        <ul class="project__features">
+          <li data-i18n="projects.p5.f1">Captura de recibos con OCR y revisión humana antes de guardar cada transacción.</li>
+          <li data-i18n="projects.p5.f2">Facturas en PDF; al marcar una factura como pagada se crea el ingreso automáticamente.</li>
+          <li data-i18n="projects.p5.f3">Corte de caja, reportes para impuestos (JSON y CSV) e importación de extractos bancarios.</li>
+          <li data-i18n="projects.p5.f4">Refactor que unificó tres fuentes de datos en una sola arquitectura basada en transacciones.</li>
+        </ul>
+        <div class="project__stack">
+          <span class="pill">Python</span>
+          <span class="pill">FastAPI</span>
+          <span class="pill">SQLAlchemy</span>
+          <span class="pill">Alembic</span>
+          <span class="pill">React</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">Tailwind</span>
+          <span class="pill">Tesseract</span>
+          <span class="pill">Gmail API</span>
+          <span class="pill">Docker</span>
+        </div>
+        <span class="project__private" data-i18n="projects.private">🔒 Código privado</span>
+      </article>
+
+      <article class="project">
+        <div class="project__meta">
+          <span class="tag tag--live" data-i18n="projects.inUse">En uso real</span>
+          <span class="project__index">03</span>
+        </div>
+        <h3 class="project__title">Interpreter Assistant</h3>
+        <p class="project__desc" data-i18n="projects.p6.desc">Plataforma que automatiza mi trabajo como intérprete. Empezó como un extractor de citas de los portales de las agencias y creció a un asistente de agenda y kilometraje.</p>
+        <ul class="project__features">
+          <li data-i18n="projects.p6.f1">Extracción automática de citas de varias plataformas, con paginación y exportación a CSV, Google Sheets y webhooks.</li>
+          <li data-i18n="projects.p6.f2">Agenda automática que prioriza las citas según el ingreso.</li>
+          <li data-i18n="projects.p6.f3">Cálculo de millaje encadenado entre citas consecutivas.</li>
+          <li data-i18n="projects.p6.f4">Notificaciones por correo con plantillas HTML y acceso remoto seguro por Tailscale.</li>
+        </ul>
+        <div class="project__stack">
+          <span class="pill">Python</span>
+          <span class="pill">Selenium</span>
+          <span class="pill">Google Sheets API</span>
+          <span class="pill">Webhooks</span>
+          <span class="pill">Tailscale</span>
+        </div>
+        <span class="project__private" data-i18n="projects.private">🔒 Código privado</span>
+      </article>
+
+      <article class="project">
+        <div class="project__meta">
+          <span class="tag tag--live" data-i18n="projects.inUse">En uso real</span>
+          <span class="project__index">04</span>
+        </div>
+        <h3 class="project__title">Alacena</h3>
+        <p class="project__desc" data-i18n="projects.p3.desc">App de inventario de despensa y lista de mercado, organizada por pasillos de supermercado.</p>
+        <ul class="project__features">
+          <li data-i18n="projects.p3.f1">Escaneo de códigos de barras con la cámara y datos de Open Food Facts.</li>
+          <li data-i18n="projects.p3.f2">Lectura de recibos con OpenAI Vision, después de que Tesseract no funcionó con recibos térmicos.</li>
+          <li data-i18n="projects.p3.f3">Historial de precios por tienda y alertas de productos por vencer.</li>
+          <li data-i18n="projects.p3.f4">Migración completa de archivos Markdown a una capa SQL unificada.</li>
+        </ul>
+        <div class="project__stack">
+          <span class="pill">Python</span>
+          <span class="pill">FastAPI</span>
+          <span class="pill">SQLAlchemy</span>
+          <span class="pill">SQLite</span>
+          <span class="pill">React</span>
+          <span class="pill">Vite</span>
+          <span class="pill">OpenAI API</span>
+          <span class="pill">Docker</span>
+        </div>
+        <span class="project__private" data-i18n="projects.private">🔒 Código privado</span>
+      </article>
+
+      <article class="project">
+        <div class="project__meta">
+          <span class="tag tag--progress" data-i18n="projects.academic">Académico</span>
+          <span class="project__index">05</span>
         </div>
         <h3 class="project__title">Hotel Management System</h3>
         <p class="project__desc" data-i18n="projects.p1.desc">Sistema de gestión hotelera construido en Java con Spring Boot, siguiendo arquitectura en capas: entidades, repositorios, servicios y controladores. Incluye manejo de habitaciones, huéspedes, reservas y servicios adicionales.</p>
@@ -173,8 +312,8 @@
 
       <article class="project">
         <div class="project__meta">
-          <span class="tag tag--progress" data-i18n="projects.inProgress">En desarrollo</span>
-          <span class="project__index">02</span>
+          <span class="tag tag--progress" data-i18n="projects.academic">Académico</span>
+          <span class="project__index">06</span>
         </div>
         <h3 class="project__title">VetCare</h3>
         <p class="project__desc" data-i18n="projects.p2.desc">Aplicación de gestión veterinaria desarrollada con Spring Boot y PostgreSQL. Administra información de veterinarios, pacientes y citas, aplicando restricciones y buenas prácticas de modelado con JPA.</p>
@@ -184,20 +323,6 @@
           <span class="pill">JPA</span>
         </div>
         <a href="https://github.com/dcelcirculo/VetCare" target="_blank" rel="noopener" class="project__link" data-i18n="projects.viewRepo">Ver repositorio ↗</a>
-      </article>
-
-      <article class="project">
-        <div class="project__meta">
-          <span class="tag tag--progress" data-i18n="projects.inProgress">En desarrollo</span>
-          <span class="project__index">03</span>
-        </div>
-        <h3 class="project__title">Control de Despensa</h3>
-        <p class="project__desc" data-i18n="projects.p3.desc">Proyecto personal de inventario de despensa. Cada vez que se registra el uso de un producto, el stock se descuenta automáticamente. Contempla, a futuro, reconocimiento de productos por foto para crear registros de forma automática.</p>
-        <div class="project__stack">
-          <span class="pill">Spring Boot</span>
-          <span class="pill">PostgreSQL</span>
-          <span class="pill" data-i18n="projects.personal">Proyecto personal</span>
-        </div>
       </article>
 
     </div>
